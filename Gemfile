@@ -9,10 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: :development
-gem 'pg', group: :production
-gem 'rails_12factor', group: :production
-
+gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -55,6 +52,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #DEVISE
 gem 'devise'
 
-gem 'bcrypt', '~> 3.1.7' 
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+
 #gem 'bcrypt', platforms: :ruby
+
 
